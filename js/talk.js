@@ -4,7 +4,7 @@ new TypeIt("#tqyxhj", {
         speed: 100
     })
     .type("我的梦 && 少")
-    .pause(2000)
+    .pause(1000)
     .delete(null, {
         delay: 500
     })
