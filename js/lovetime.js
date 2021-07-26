@@ -1,5 +1,5 @@
 function lovetime() {
-    window.setTimeout("lovetime()", 1000);
+    window.setTimeout("lovetime()", 10000);
     var seconds = 1000
     var minutes = seconds * 60
     var hours = minutes * 60
@@ -14,7 +14,8 @@ function lovetime() {
     var todaySecond = today.getSeconds()
     // 修改这里时间即可 我的是2018.11.19
     var t1 = Date.UTC(2020, 07, 25, 21, 17, 00)
-    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
+    var t2 = Date.UTC(todayYear, todayMonth+1, todayDate, todayHour, todayMinute, todaySecond)
+
     var diff = t2 - t1
     var diffYears = Math.floor(diff / years)
     var diffDays = Math.floor((diff / days) - diffYears * 365)
